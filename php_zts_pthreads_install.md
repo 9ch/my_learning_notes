@@ -1,4 +1,4 @@
- # ubuntu下的pthreads扩展安装。（基于pecl）
+  # ubuntu下的pthreads扩展安装。（基于pecl）
   ## 说在最前面，安装之前一定要先`apt-get update` 一下。否则安装过程中可能会出现查找不到文件的情况，因为是基于pecl，所以可能被墙，所以推荐安装一个vpn。
   首先，如果你已经安装了`php`的话，那么不好意思，你要卸载掉它，才能安装`pthreads`，
   因为`pthreads`是根据`zts`安装的，如果直接安装的话，会出一个缺少`zts`的配置，然后让你重新编译安装php。
