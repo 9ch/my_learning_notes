@@ -1,6 +1,6 @@
 # ubuntu下的redis安装和配置。
 
-## 最简便的方法，如果不出错的话。:smirk:
+## 最简便的方法，如果不出错的话。:smirk::smirk:
 
   1. 在安装之前，先`apt-get uodate` 一下。
   2. 然后直接用apt-get进行安装 `sudo apt-get install redis-server` redis的服务版。安装完成之后，键入`redis-cli`如果出现 输入模式则证明安装完成。
