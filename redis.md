@@ -1,7 +1,7 @@
-   ubuntu下的redis安装和配置。
-   ==============
-   最简便的方法，如果不出错的话。
-   =========
+   # ubuntu下的redis安装和配置。
+   
+   ## 最简便的方法，如果不出错的话。
+   
   1. 在安装之前，先apt-get uodate 一下。
   2. 然后直接用apt-get进行安装 `sudo apt-get install redis-server` redis的服务版。安装完成之后，键入`redis-cli`如果出现 输入模式则证明安装完成。
   3. 安装php的扩展。` sudo apt-get install php5-redis` 安装完成之后，键入` php -m` ，如果在扩展模块中看到redis则证明redis模块安装完成。
