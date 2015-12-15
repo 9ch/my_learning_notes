@@ -13,14 +13,20 @@
   
 ## 第二步： 预先安装所需要的库
   1.在安装之前，先把编译安装过程中所需要的库预先安装上，免得安装过程中出现不必要的错误。
-  `sudo apt-get install gcc make libzzip-dev libreadline-dev libxml2-dev libssl-dev libmcrypt-dev libcurl4-openssl-dev lib32bz2-dev `
+  `sudo apt-get install gcc make libzzip-dev libreadline-dev libxml2-dev libssl-dev libmcrypt-dev libcurl4-openssl-dev lib32bz2-dev libpng-dev`
   
 ## 第三步：安装php
   1. `cd /usr/local/src`
   2. `wget http://www.php.net/distributions/php-5.5.8.tar.gz` (具体版本自己选择)
   3. `tar zxvf php-5.5.8.tar.gz` 
   4. `cd /usr/local/src/php-5.5.8` 进入到解压目录安装配置
-  5. `./configure --prefix=/usr --with-config-file-path=/etc --enable-maintainer-zts` 
+  5. 我安装的是在/usr目录下面。配置文件是在/etc目录下面，可以自己更改安装目录
+  ```
+  ./configure --prefix=/usr --with-config-file-path=/etc --enable-maintainer-zts --with-gd --enable-gd-native-ttf --with-openssl --with-mhash 
+  --enable-pcntl --enable-sockets --with-xmlrpc --enable-zip --enable-soap --enable-opcache --with-pdo-mysql --disable-rpath --enable-bcmath 
+  --enable-shmop --enable-sysvsem --enable-inline-optimization --with-curl --enable-mbregex --enable-fpm --enable-mbstring --with-zlib 
+  --with-libxml-dir=/usr --enable-xml --with-iconv-dir
+  ```
   如果此时出现一个缺少autoconf或者m4的错误，则手动进行安装:
    `apt-get install autoconf`,安装这个默认会把m4也安装上
   6. 编译安装环节：
