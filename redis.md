@@ -22,4 +22,4 @@
  extension=redis.so
  ```
  然后建立链接：
- `sudo ln -s /etc/php5/mods-available/redis.ini /etc/php5/apache2/conf.d/20-redis.ini`。然后重启apache，这样就安装成功了。:kissing_heart:
+ `sudo ln -s /etc/php5/mods-available/redis.ini /etc/php5/apache2/conf.d/20-redis.ini`。然后重启apache，这样就安装成功了。:kissing_heart::kissing_heart:
