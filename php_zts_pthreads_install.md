@@ -40,6 +40,7 @@
    如果提示失败的话。就说明网被墙了，此时你需要一个vpn
   2. 修改配置文件，将`pthreads`扩展文件加入到配置文件里面
   `echo "extension=pthreads.so" >> /etc/php.ini`
+  
 ## 第五步： 检查安装是否成功
   `php -m | grep pthreads` 
   如果在命令行里面看到pthreads就说明你安装成功了
