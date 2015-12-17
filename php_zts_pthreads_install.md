@@ -45,3 +45,4 @@
   `php -m | grep pthreads` 
   如果在命令行里面看到pthreads就说明你安装成功了
   
+   © 2015 9ch
